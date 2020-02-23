@@ -14,4 +14,5 @@ class CashRegister
     self.last_amount = price * quantity
     self.items += item * quantity
   end 
+end 
     
