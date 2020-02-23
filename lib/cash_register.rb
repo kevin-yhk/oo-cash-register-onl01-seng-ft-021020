@@ -26,9 +26,9 @@ def apply_discount()
     if @discount > 0
       @discount = @discount/100.to_f
       @total -= (@total * (@discount))
-      "After the discount, the total comes to $#{@total.to_i}."
+      "Post discount, the total is $#{@total.to_i}."
     else
-      "There is no discount to apply."
+      "No discount to apply."
     end
   end
 end 
