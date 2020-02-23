@@ -19,6 +19,8 @@ class CashRegister
       end
     else
       @items << item
+      @last_amount = @total
+      @total
     end
   end
   
