@@ -30,7 +30,7 @@ class CashRegister
       if @discount > 0 
         @total -= (@total * @discount)/100
         return "After the discount, the total comes to $#{@total}."
-      elsif @discount == 0 
+      else 
         return "There is no discount to apply."
       end
     end
