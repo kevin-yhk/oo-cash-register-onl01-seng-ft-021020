@@ -9,8 +9,8 @@ class CashRegister
   end
 
   def add_item(item, price, quantity = 1)
-    @last_amount = @total
-    @total += price * quantity
+    
+    
     if quantity > 1
       x = 0
       while x < quantity
@@ -19,6 +19,7 @@ class CashRegister
       end
     else
       @items << item
+      @total += price * quantity
       @last_amount = @total
       @total
     end
