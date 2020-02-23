@@ -19,7 +19,6 @@ class CashRegister
       end
     else
       @items << item
-      @last_amount = @total
     end
   end
   
